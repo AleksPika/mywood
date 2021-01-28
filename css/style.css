@@ -24079,7 +24079,10 @@ footer {
 @media (max-width: 700px) {
     .connect-pk-none {
         display: none;
-    }
+	}
+	.unit-spacing-xs{
+		padding-left: 10px;
+	}
 }
 
 @media (min-width: 700px) {
