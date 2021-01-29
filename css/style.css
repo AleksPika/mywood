@@ -21370,7 +21370,6 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	width: auto;
 	opacity: 0;
 	z-index: 99;
-	/* styles required for IE to work */
 	background-color: #ffffff;
 	filter: alpha(opacity=0);
 }
@@ -21931,7 +21930,6 @@ disabled look for disabled choices in the results dropdown
 	color: #ffffff;
 	top: 50%;
 	margin-top: -10px \9;
-	/*lte IE 8*/
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	padding: 0;
@@ -23174,9 +23172,6 @@ img.mfp-img {
 	display: block;
 	text-align: center;
 	position: static;
-	/*bottom: 0;*/
-	/*padding: 0;*/
-	/*left: 0;*/
 	margin: 0 0 20px 0;
 	max-height: 55px;
 	overflow: hidden;
@@ -23238,15 +23233,9 @@ img.mfp-img {
 .single-product-carousel .owl-thumbs-wrapper .arrow.left {
 	left: 0;
 }
-/*.single-product-carousel .owl-thumbs-wrapper .arrow.left:before {*/
-	/*content: '\f0d9';*/
-/*}*/
 .single-product-carousel .owl-thumbs-wrapper .arrow.right {
 	right: 0;
 }
-/*.single-product-carousel .owl-thumbs-wrapper .arrow.right:before {*/
-	/*content: '\f0da';*/
-/*}*/
 .single-product-carousel .owl-thumbs button.owl-thumb-item {
 	opacity: 0.5;
 	transition: all 0.3s ease-in-out;
@@ -23300,18 +23289,11 @@ img.mfp-img {
     display: none;
 }
 
-@media (max-width: 991px) {
-	/*.breadcrumbs-custom-inset {*/
-		/*padding: 40px 0;*/
-	/*}*/
-}
-
 .breadcrumbs-wood-bg {
 	background-image: url('../img/bg-cta-2.jpg');
 	background-repeat: no-repeat;
 	background-position: center 0;
 	background-size: 100%;
-	/*background-attachment: fixed;*/
 	position: relative;
 }
 .breadcrumbs-wood-bg:before {
@@ -23376,7 +23358,6 @@ img.mfp-img {
 }
 
 .rd-navbar-lang-item a.rd-nav-link + ul.rd-navbar-lang {
-	/*display: none;*/
 	display: block;
 	width: 80px;
 	visibility: hidden;
@@ -23396,7 +23377,6 @@ img.mfp-img {
 	visibility: visible;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	/*height: 50px;*/
 	height: 110px;
 }
 h1.h1-on-homepage {
@@ -24031,8 +24011,6 @@ footer {
 }
 
 .made-gallery {
-    /*background-color: #f7f7f7;*/
-    /*padding: 15px;*/
     margin: 0 -15px;
 }
 .made-gallery h6 {

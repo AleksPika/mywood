@@ -59,7 +59,6 @@
 			progressLinear: $(".progress-linear"),
 			circleProgress: $(".progress-bar-circle"),
 			dateCountdown: $('.DateCountdown'),
-			// preloader: $(".preloader"),
 			scroller: $(".scroll-wrap"),
 			lightGallery: $("[data-lightgallery='group']"),
 			lightGalleryItem: $("[data-lightgallery='item']"),
@@ -96,12 +95,7 @@
 	 * @param {function} func - callback function
 	 */
 	function lazyInit(element, func) {
-		// $document.on('scroll', function () {
-		// 	if ((!element.hasClass('lazy-loaded') && (isScrolledIntoView(element)))) {
-		// 		func.call();
-		// 		element.addClass('lazy-loaded');
-		// 	}
-		// }).trigger("scroll");
+
 	}
 
 	// Initialize scripts that require a loaded page
@@ -109,30 +103,6 @@
 
         $document.off('scroll');
         $window.off('scroll');
-
-		// // Page loader & Page transition
-		// if (plugins.preloader.length && !isNoviBuilder) {
-		// 	pageTransition({
-		// 		target: document.querySelector('.page'),
-		// 		delay: 100,
-		// 		duration: 500,
-		// 		classIn: 'fadeIn',
-		// 		classOut: 'fadeOut',
-		// 		classActive: 'animated',
-		// 		conditions: function (event, link) {
-		// 			return !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link) && !event.currentTarget.hasAttribute('data-lightgallery');
-		// 		},
-		// 		onTransitionStart: function ( options ) {
-		// 			setTimeout( function () {
-		// 				plugins.preloader.removeClass('loaded');
-		// 			}, options.duration * .75 );
-		// 		},
-		// 		onReady: function () {
-		// 			plugins.preloader.addClass('loaded');
-		// 			windowReady = true;
-		// 		}
-		// 	});
-		// }
 
 		// jQuery Count To
 		if ( plugins.counter.length ) {
@@ -1087,13 +1057,6 @@
 			plugins.copyrightYear.text(initialDate.getFullYear());
 		}
 
-		// // Page loader
-		// if (plugins.preloader.length) {
-		// 	loaderTimeoutId = setTimeout(function () {
-		// 		if (!windowReady && !isNoviBuilder) plugins.preloader.removeClass('loaded');
-		// 	}, 2000);
-		// }
-
 		// Google maps
 		if( plugins.maps.length ) {
 			lazyInit( plugins.maps, initMaps );
@@ -1299,12 +1262,6 @@
 
                 $view.addClass("active");
 
-				// $document.on("scroll", $.proxy(function () {
-				// 	if (isScrolledIntoView(this)) {
-				// 		this.addClass("active");
-				// 	}
-				// }, $view))
-				// 	.trigger("scroll");
 			}
 		}
 
@@ -1608,7 +1565,6 @@
 						var output = $("#" + $(plugins.rdMailForm[this.extraData.counter]).attr("data-form-output")),
 							form = $(plugins.rdMailForm[this.extraData.counter]);
 
-						// output.text(msg[result]);
 						output.text(result);
 						form.removeClass('form-in-process');
 					},
@@ -1624,8 +1580,6 @@
 							.addClass('success')
 							.removeClass('form-in-process');
 
-						// result = result.length === 5 ? result : 'MF255';
-						// output.text(msg[result]);
 						output.text(result);
 
 						if (result === "MF000") {
